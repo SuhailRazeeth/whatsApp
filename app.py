@@ -100,7 +100,6 @@ def reply():
         day = a['dayAttendance']
         semester = a['semesterAttendance']
 
-        selected = student["Info"]
         if option == 1:
             res.message(f"*Monthly attendance* : {month}")
         elif option == 2:
