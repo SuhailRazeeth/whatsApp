@@ -51,6 +51,7 @@ def reply():
             res.message("Library Email: *https://www.seu.ac.lk/library/*")
         elif option == 5:
             res.message("*Thanks for contact us. Have a Great Day*")
+            students.update_one({"number": number}, {"$set": {"status": "main"}})
         else:
             res.message("Please Enter a valid response")
             return str(res)
